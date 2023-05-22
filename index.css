@@ -1,0 +1,260 @@
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 150px;
+}
+
+body header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 3px 2px rgba(21, 93, 99, 0.281);
+}
+
+/* header */
+ul {
+    margin-left: 180px;
+}
+
+li {
+    display: inline-block;
+    *display: inline;
+    /*IE7*/
+    color: rgb(0, 0, 0);
+    padding-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+ul img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+li a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+}
+
+li a:hover {
+    transition: .3s ease all;
+    text-decoration: none;
+    color: rgb(21, 93, 99);
+    box-shadow: 0px 5px 0px 0px rgb(21, 93, 99, 1);
+    border: transparent;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo:hover {
+    box-shadow: none;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+/* barra home */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.show-data {
+    width: auto;
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    border-color: #00000057;
+    border-style: ridge;
+}
+
+.show-data-box {
+    margin: 50px;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 1);
+    border: 6px solid transparent;
+    border-radius: 5px;
+    background-color: #0b2833;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.show-data-content-img {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+}
+
+.show-data-content-info {
+    color: white;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    display: flex;
+    background-color: rgb(27, 27, 27, 0.8);
+    align-items: center;
+}
+
+.show-data-content-info:hover {
+    opacity: 1;
+    transition: .9s ease all;
+}
+
+.login-button {
+    display: block;
+    background: none;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.buttons {
+    display: block;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.login {
+    padding-left: 1860px;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: rgb(21, 93, 99);
+}
+
+.svg-icon circle {
+    stroke: rgb(21, 93, 99);
+    stroke-width: 1;
+}
+
+.svg-icon:hover,
+.h1-logout:hover {
+    stroke: rgb(21, 93, 99);
+    stroke-width: 1;
+    opacity: 1;
+    transition: .9s ease all;
+}
+
+.h1-logout {
+    font-size: 10px;
+    color: rgb(21, 93, 99);
+}
+
+.logout svg {
+    margin-left: 15px;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: rgb(3, 12, 14);
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 90%;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+    background-color: #32353c;
+    outline: none;
+    font-size: 15px;
+    grid-area: input;
+    border: 1px solid #32353c;
+    margin: 5px;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: rgb(21, 93, 99);
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    opacity: 0.8;
+    margin-left: 80px;
+    color: white;
+}
+
+.form-container .cancel {
+    background-color: #01698b;
+    top: 0;
+    margin: 0;
+    right: 0;
+    height: 1px;
+    width: 10x;
+    padding-left: 5px;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+.form-popup label {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    color: #afafaf;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    user-select: none;
+    font-family: "Motiva Sans", Sans-serif;
+}
+
+.form-popup h1 {
+    color: white;
+    font-family: "Motiva Sans", Sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.form-popup label[for=email] {
+    color: rgb(21, 93, 99);
+}
