@@ -2,16 +2,21 @@ header {
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 150px;
+    
 }
-
+header .ul{
+    align-items: center;
+}
 body header {
     background-color: rgb(255, 255, 255);
     box-shadow: 1px 3px 3px 2px rgba(21, 93, 99, 0.281);
 }
 
 /* header */
-ul {
-    margin-left: 180px;
+ul {    
+    text-align: center;
+    align-items: center;
+    padding-right: 200px;
 }
 
 li {
@@ -19,7 +24,7 @@ li {
     *display: inline;
     /*IE7*/
     color: rgb(0, 0, 0);
-    padding-left: 50px;
+    padding-left: 100px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -79,6 +84,7 @@ body {
     background-color: #ffffff;
     border-color: #00000057;
     border-style: ridge;
+    margin-bottom: 300px;
 }
 
 .show-data-box {
@@ -257,4 +263,69 @@ SVG Icons - svgicons.sparkk.fr
 
 .form-popup label[for=email] {
     color: rgb(21, 93, 99);
+}
+
+.show-data-box-monit{
+    width: fit-content;
+    margin: 50px;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 1);
+    border: 6px solid transparent;
+    border-radius: 5px;
+    background-color: #0b2833;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    justify-content: center;    
+}
+
+
+
+.show-data-monit {
+    width: fit-content;
+    height: 700px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    border-color: #00000057;
+    border-style: ridge;
+    margin-bottom: 100px;
+}
+.a{
+    display: block;
+    padding-left: 300px;
+}
+footer{
+    padding-top: 50px;
+    background-color: #0b2833;
+    align-items: center;
+    display: flow-root;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+}
+    
+.Footer{
+    align-items:center;
+    text-align: center;
+}
+.FooterList{
+    align-items:center;
+    text-align: center;
+}
+
+footer li{
+    color: white;
+    align-items:center;
+    text-align: center;
+}
+
+footer ul{
+    align-items:center;
+    text-align: center;
+    margin-bottom: 50px;
 }

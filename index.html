@@ -35,7 +35,7 @@
             </li>
             <li><a class="selected" href="index.html">MONITOREO</a></li>
             <li><a href="historial-medico.html">HISTORIAL MEDICO<a></li>
-            <li><a href="contacto.html">CONTACTO MONITOR</a></li>
+            <!-- <li><a href="contacto.html">CONTACTO MONITOR</a></li> -->
             <li>
                 <button class="login-button" onclick="openForm()">
                     <svg class="svg-icon" viewBox="0 0 20 20">
@@ -47,6 +47,19 @@
         </ul>
     </header>
     </div>
+    <div class="a">
+    <div class="show-data-monit">
+        <div class="show-data-box-monit">
+            <img class="show-data-content-img" src="./content/resumen-actividad.png" />
+        </div>
+        <div class="show-data-box-monit">
+            <img class="show-data-content-img" src="./content/ritmo-cardiaco.png" />
+        </div>
+        <div class="show-data-box-monit">
+            <img class="show-data-content-img" src="./content/ubicacion-paciente.png" />
+        </div>
+    </div>
+    </div>
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
@@ -56,8 +69,20 @@
             document.getElementById("myForm").style.display = "none";
         }
     </script>
-</body>
 
+
+</body>
+<footer>
+    <div className="Footer">
+        <ul className="FooterList">
+            <a className="Logo" href="/home" rel="noreferrer noopener">
+            </a>
+            <a href="#contacto"><li>Contacto</li></a>
+            <a href="#quienes-somos"><li>¿Quiénes Somos?</li></a>
+            <a href="#portafolio"><li>Siguenos</li></a>
+        </ul>
+    </div>
+  </footer>
 </html>
 
 </html>
